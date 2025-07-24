@@ -2,7 +2,6 @@
 node_modules/
 .pnp
 .pnp.js
-.yarn/install-state.gz
 
 # Production builds
 .next/
@@ -97,25 +96,24 @@ public
 # Storybook build outputs
 .out
 .storybook-out
+storybook-static
 
 # Temporary folders
 tmp/
 temp/
 
 # Editor directories and files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 
 # Turbo
@@ -124,8 +122,20 @@ Thumbs.db
 # Vercel
 .vercel
 
-# Supabase
-.supabase/
-
 # Local development
-*.log 
+*.log
+
+# Database
+*.db
+*.sqlite
+
+# Redis dump
+dump.rdb
+
+# IDE
+.cursor/
+.husky/
+
+# Build artifacts
+packages/*/dist/
+packages/*/build/ 

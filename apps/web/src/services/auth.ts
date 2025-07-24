@@ -106,10 +106,10 @@ export class AuthService {
       // Update last_active_at
       if (data.user) {
         try {
-          await this.supabase
-            .from('users')
-            .update({ last_active_at: new Date().toISOString() })
-            .eq('id', data.user.id)
+        await this.supabase
+          .from('users')
+          .update({ last_active_at: new Date().toISOString() })
+          .eq('id', data.user.id)
         } catch (updateError) {
           console.warn('Failed to update last_active_at:', updateError)
           // Don't fail login for this
