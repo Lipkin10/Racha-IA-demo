@@ -1,0 +1,35 @@
+{
+  "name": "@racha-ai/shared",
+  "version": "1.0.0",
+  "description": "Shared TypeScript interfaces and Brazilian constants for RachaAI",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./types": "./dist/types/index.js",
+    "./constants": "./dist/constants/index.js",
+    "./utils": "./dist/utils/index.js",
+    "./validation": "./dist/validation/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "3.22.4",
+    "date-fns": "3.0.6"
+  },
+  "devDependencies": {
+    "typescript": "5.3.3",
+    "@types/node": "^20"
+  },
+  "keywords": [
+    "typescript",
+    "shared",
+    "brazil",
+    "constants",
+    "types"
+  ]
+} 

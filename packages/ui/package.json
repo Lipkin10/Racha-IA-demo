@@ -1,0 +1,44 @@
+{
+  "name": "@racha-ai/ui",
+  "version": "1.0.0",
+  "description": "Shared UI components for RachaAI",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./components": "./dist/components/index.js",
+    "./styles": "./dist/styles/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwindcss-animate": "^1.0.7",
+    "class-variance-authority": "^0.7.0",
+    "lucide-react": "^0.294.0",
+    "clsx": "^2.0.0",
+    "tailwind-merge": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "5.3.3",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/node": "^20"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "shadcn",
+    "tailwind"
+  ]
+} 

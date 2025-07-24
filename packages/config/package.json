@@ -1,0 +1,32 @@
+{
+  "name": "@racha-ai/config",
+  "version": "1.0.0",
+  "description": "Shared configurations for ESLint, TypeScript, and Tailwind",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "./eslint": "./eslint/index.js",
+    "./typescript": "./typescript/index.js",
+    "./tailwind": "./tailwind/index.js",
+    "./jest": "./jest/index.js"
+  },
+  "scripts": {
+    "build": "echo 'No build needed for config package'",
+    "dev": "echo 'No dev needed for config package'",
+    "clean": "echo 'No clean needed for config package'",
+    "type-check": "echo 'No type-check needed for config package'"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "typescript": "5.3.3",
+    "tailwindcss": "3.3.6",
+    "jest": "29.7.0"
+  },
+  "keywords": [
+    "eslint",
+    "typescript",
+    "tailwind",
+    "jest",
+    "config"
+  ]
+} 

@@ -1,0 +1,51 @@
+{
+  "name": "racha-ai",
+  "version": "1.0.0",
+  "description": "RachaAI - Brazilian AI-powered group expense management platform",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean",
+    "supabase:setup": "cd apps/web && npx supabase init",
+    "db:migrate": "cd apps/web && npx supabase db reset",
+    "db:seed": "cd apps/web && npx supabase db seed",
+    "test:health": "node scripts/test-all-services.js",
+    "test:database": "node scripts/test-database.js",
+    "test:claude": "node scripts/test-claude.js"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "chalk": "^4.1.2",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "node-fetch": "^2.7.0",
+    "prettier": "^3.6.2",
+    "turbo": "1.11.2"
+  },
+  "packageManager": "pnpm@8.10.5",
+  "engines": {
+    "node": ">=20.10.0",
+    "pnpm": ">=8.10.5"
+  },
+  "keywords": [
+    "expense-management",
+    "ai",
+    "brazil",
+    "fintech",
+    "lgpd"
+  ],
+  "author": "RachaAI Team",
+  "license": "MIT"
+}
