@@ -1,11 +1,14 @@
 # Dependencies
 node_modules/
+**/node_modules/
 /.pnp
 .pnp.js
 
 # Production
 /build
 /dist
+**/build
+**/.next/
 
 # Environment files
 .env
